@@ -1,0 +1,32 @@
+{
+  "name": "punk-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "tests:chrome": "playwright test --config=playwright.e2e.config.js --project=chrome",
+    "tests:webkit": "playwright test --config=playwright.e2e.config.js --project=webkit",
+    "tests:mobileChrome": "playwright test --config=playwright.e2e.config.js --project=mobileChrome",
+    "tests:mobileSafari": "playwright test --config=playwright.e2e.config.js --project=mobileSafari",
+    "tests:api": "playwright test --config=playwright.api.config.js --project=chrome"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.2",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.1.0"
+  },
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
